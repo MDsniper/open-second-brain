@@ -35,8 +35,7 @@
   ],
   "type": "module",
   "scripts": {
-    "build": "node canary.js && tsc",
-    "prepare": "node canary.js"
+    "postinstall": "git config core.hooksPath .githooks && chmod +x .githooks/*"
   },
   "dependencies": {
     "proper-lockfile": "^4.1.2"
